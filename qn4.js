@@ -1,7 +1,19 @@
 // isPalindrome
 
-let name = "madam";
+let str = "madam";
+function palindrome(val) {
+  //   console.log(val);
+  //   console.log(typeof val);
 
-function isPalindrome(name) {}
+  let newVal = val.split("").reverse().join("");
+  //   console.log(newVal);
+  //   console.log(anotherVal);
 
-isPalindrome(name);
+  if (newVal == str) {
+    return true;
+  }
+
+  return false;
+}
+
+console.log(palindrome(str));

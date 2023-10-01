@@ -2,6 +2,8 @@
 
 let x = "hello";
 
-function duplicate(x) {}
+function duplicate(x) {
+  return [...new Set(x)].join("");
+}
 
 console.log(duplicate(x));

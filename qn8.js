@@ -1,17 +1,18 @@
 // isPrime
 
-let n = 4;
+let n = 11;
 
 function isPrime(n) {
-  if (n % 1 === 0) {
-    return true;
-  }
-
-  if (n % n === 0) {
-    return true;
-  } else {
+  if (n < 2) {
     return false;
   }
+
+  for (let i = 2; i < n; i++) {
+    if (n % i !== 0) {
+      return true;
+    }
+  }
+  return false;
 }
 
 console.log(isPrime(n));
